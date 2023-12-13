@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snowfall/snowfall.dart';
+import 'package:simple_snowfall/snows/snowfall_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,14 +18,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

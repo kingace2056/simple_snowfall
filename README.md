@@ -38,6 +38,10 @@ SnowfallWidget(
 )
 ```
 
+## Demo
+
+![Demo GIF](images/demo.gif)
+
 ## Contact Information
 
 For any inquiries or feedback, feel free to reach out:

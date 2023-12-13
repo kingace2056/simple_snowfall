@@ -2,20 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:snowfall/snowfall.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Simple Snowfall',
       home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -26,8 +31,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
-        // width: double.infinity,
-        // height: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -38,19 +41,36 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         child: Stack(
           children: [
-            ElevatedButton(
-              onPressed: () {
-                print("Button pressed");
-              },
-              child: const Text('Press me'),
-            ),
             SnowfallWidget(
               gravity: 0.1,
               windIntensity: 1,
-              size: Size(MediaQuery.of(context).size.width,
-                  MediaQuery.of(context).size.height),
+              size: MediaQuery.of(context).size,
+              // Change the snowflake size or other properties if needed
             ),
-            //make some buttons with print function ontap
+            const Positioned(
+              bottom: 20,
+              left: 20,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Simple Snowfall Widget',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'Use this widget to bring snowfall effect to your app!',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

@@ -1,10 +1,10 @@
-name: snowfall
+name: simple_snowfall
 description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+version: 1.0.0
+homepage: https://github.com/kingace2056/simple_snowfall
 
 environment:
-  sdk: '>=3.2.2 <4.0.0'
+  sdk: ">=3.2.2 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

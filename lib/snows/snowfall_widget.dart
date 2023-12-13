@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snowfall/enums/startposition_enum.dart';
+import 'package:simple_snowfall/enums/startposition_enum.dart';
 
 import 'snow_painter.dart';
 

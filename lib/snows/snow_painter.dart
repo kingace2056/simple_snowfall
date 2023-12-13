@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:snowfall/enums/startposition_enum.dart';
+import 'package:simple_snowfall/enums/startposition_enum.dart';
 
 class SnowPainter extends CustomPainter {
   final List<SnowFlake> snowflakes;

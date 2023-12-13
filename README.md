@@ -1,39 +1,54 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Simple Snowfall
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This Flutter package provides a simple and customizable snowfall animation widget. It's perfect for adding a festive touch to your Flutter applications during the holiday season.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Realistic snowfall animation.
+- Customizable gravity and wind intensity.
+- Easy to integrate into your Flutter app.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add `simple_snowfall` as a dependency in your `pubspec.yaml` file.
+
+```yaml
+dependencies:
+  simple_snowfall: ^1.0.0
+```
+
+Then, import the package in your Dart code:
+
+```dart
+import 'package:simple_snowfall/snowfall.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Create a `SnowfallWidget` and place it in your widget tree. You can customize the gravity, wind intensity, and size.
 
 ```dart
-const like = 'sample';
+SnowfallWidget(
+  gravity: 0.1,
+  windIntensity: 1,
+  size: Size(
+    MediaQuery.of(context).size.width,
+    MediaQuery.of(context).size.height,
+  ),
+)
 ```
 
-## Additional information
+## Contact Information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+For any inquiries or feedback, feel free to reach out:
+
+- **LinkedIn**: [Sarthak Parajuli](https://www.linkedin.com/in/sarthakparajuli/)
+- **GitHub**: [Sarthak Parajuli](https://github.com/kingace2056)
+
+## Repository
+
+Find the project on GitHub: [Simple Snowfall Repo](https://github.com/kingace2056/simple_snowfall)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
